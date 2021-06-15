@@ -1,8 +1,5 @@
 .idea
 target
-<<<<<<< HEAD
 .iml
 output
-=======
-.iml
->>>>>>> e7fa1dd (mend)
+.yml
