@@ -69,15 +69,9 @@ public class Rover {
 
     @Override
     public boolean equals(Object o) {
-        if (this == o) return true;
-        if (o == null || getClass() != o.getClass()) return false;
-
+        if (getClass() != o.getClass()) return false;
         Rover rover = (Rover) o;
-
-        if (y != rover.y) return false;
-        if (x != rover.x) return false;
-        return direction != null ? direction.equals(rover.direction) : rover.direction == null;
-
+        return y == rover.y && x == rover.x && direction.equals(rover.direction);
     }
 
     @Override
